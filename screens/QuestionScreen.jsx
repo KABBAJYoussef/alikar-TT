@@ -60,6 +60,7 @@ const QuestionScreen = () => {
       }
     } else {
       let correctAnswer = correctAnswers;
+      stopTimer();
       if (selectedResponse !== -1) {
         if (questions[question].answers[selectedResponse].correct) {
           setCorrectAnswers(correctAnswers + 1);
